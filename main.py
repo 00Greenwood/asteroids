@@ -3,6 +3,7 @@ from constants import *
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
+from shot import Shot
 import sys
 
 
@@ -22,6 +23,7 @@ def init_sprites():
     Asteroid.containers = (asteroids, updatable, drawable)
     AsteroidField.containers = updatable
     AsteroidField()
+    Shot.containers = (updatable, drawable)
     return updatable, drawable, asteroids, player
 
 
