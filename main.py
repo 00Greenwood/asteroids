@@ -46,7 +46,7 @@ def main():
                 sys.exit()
             for shot in shots:
                 if asteroid.is_colliding(shot):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
                     break
         for sprite in drawable:
